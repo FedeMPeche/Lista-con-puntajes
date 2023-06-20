@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: radial-gradient(circle, rgba(251,183,63,1) 20%, rgba(230,252,70,0.9948354341736695) 72%);
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 0.5px 0.5px 2px black;
+}
+
+p {
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+#add-row-btn {
+  margin-top: 10px;
+}
+
+#history-select {
+  width: 150px;
+}

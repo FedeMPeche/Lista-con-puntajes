@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tabla Dinámica</title>
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+  <h1>Tabla Dinámica</h1>
+  <p>Ésta es una tabla dinámica, la cual permite ingresar un nombre (en este caso pais), un puntaje, se ordena de menor a mayor, 
+    se puede guardar la lista y retomarla, también, con el boton de inicio, se obtienen valores aleatorios cada 3 segundos, 
+    puede usarse para sorteos u otras aplicaciones. </p>
+  <div class="controls">
+    <button id="reset-btn">Reset</button>
+    <button id="start-stop-btn">Iniciar</button>
+    <select id="history-select"></select>
+    <button id="save-btn">Guardar Tabla</button>
+  </div>
+  <table id="countries-table">
+    <thead>
+      <tr>
+        <th onclick="sortTable(0)">Nombre del país</th>
+        <th onclick="sortTable(1)">Puntaje</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td contenteditable="true">País 1</td>
+        <td contenteditable="true">500</td>
+      </tr>
+      <tr>
+        <td contenteditable="true">País 2</td>
+        <td contenteditable="true">700</td>
+      </tr>
+      <tr>
+        <td contenteditable="true">País 3</td>
+        <td contenteditable="true">300</td>
+      </tr>
+      <tr>
+        <td contenteditable="true">País 4</td>
+        <td contenteditable="true">900</td>
+      </tr>
+      <tr>
+        <td contenteditable="true">País 5</td>
+        <td contenteditable="true">200</td>
+      </tr>
+    </tbody>
+  </table>
+  <button id="add-row-btn">Agregar Fila</button>
+  <button id="sort-asc-btn">Ordenar Puntajes (Ascendente)</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
